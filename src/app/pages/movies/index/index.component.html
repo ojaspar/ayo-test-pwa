@@ -22,6 +22,7 @@
         *ngFor="let movie of movies"
       ></app-card>
     </div>
+    <div *ngIf="!movies.length">No Movies Found</div>
   </div>
 </div>
 <app-footer>
