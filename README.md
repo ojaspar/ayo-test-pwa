@@ -1,6 +1,6 @@
 # AyoTestPwa
 
-This is a web application built using the Angular framework as a PWA. The application allows users to view a list of Movies, view movie details and search for movies. The application is built using Angular version 14. NgRx was also used
+This is a web application built using the Angular framework as a PWA. The application allows users to view a list of Movies, view movie details and search for movies. The application is built using Angular version 14. NgRx was also used and all existing test passed
 
 # Prerequisites
 
