@@ -1,0 +1,16 @@
+.footer {
+  background: var(--background-color);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+  height: 15%;
+  box-shadow: 0 4px 6px #2a2626;
+  border-radius: 40px 40px 0 0;
+  padding-bottom: 20px;
+  .layout {
+    padding: 20px;
+    height: 100%;
+    color: white;
+  }
+}

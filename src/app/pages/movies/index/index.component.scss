@@ -1,0 +1,49 @@
+.footerContent {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.headerContent {
+  padding: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p {
+    color: whitesmoke;
+  }
+  h1 {
+    font-size: 14px;
+  }
+  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+  }
+}
+
+.index-body {
+  h1 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  padding: 20px 10px;
+  color: white;
+}
+
+.card-layout {
+  margin-bottom: 100px;
+  height: 100%;
+  display: flex;
+  overflow-x: scroll;
+  animation-name: loop;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1500s;
+  width: 100%;
+  justify-content: center;
+}

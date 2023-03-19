@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+@use "@angular/material" as mat;
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "~@fortawesome/fontawesome-free/css/fontawesome.min.css";
+@import "~@fortawesome/fontawesome-free/css/solid.min.css";
+
+:root {
+  --primary-color: #007bff;
+  --background-color: #2b2b36;
+  --text-color: #000000;
+  --light-dark: #252121;
+}
+
+[data-theme="dark"] {
+  --primary-color: #00bcd4;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  body {
+    background-color: red;
+  }
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif !important;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  box-sizing: border-box;
+}
+
+h1,
+p {
+  font-family: "Open Sans", sans-serif !important;
+  margin-bottom: 0;
+}

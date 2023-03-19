@@ -1,0 +1,34 @@
+<app-header>
+  <div headerContent class="headerContent">
+    <div>
+      <p>Welcome Angeline 👋</p>
+      <h1>Let's relax and watch a movie!</h1>
+    </div>
+    <img
+      src="https://img.freepik.com/free-photo/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman-curly-haircut-cross-arms-chest-self-assured-powerful-pose-smiling-determined-wear-yellow-sweater_176420-35063.jpg?w=360"
+      alt="logo"
+    />
+  </div>
+</app-header>
+<app-search></app-search>
+<app-category></app-category>
+<div class="index-body">
+  <h1>Showing this Month</h1>
+  <div *ngIf="movies$ | async as movies">
+    <div class="card-layout" [ngSwitch]="movies">
+      <app-card
+        (click)="viewDetails(movie.imdbID)"
+        [movie]="movie"
+        *ngFor="let movie of movies"
+      ></app-card>
+    </div>
+  </div>
+</div>
+<app-footer>
+  <div footerContent class="footerContent">
+    <i class="fa fa-home" aria-hidden="true"></i>
+    <i class="fa fa-bolt" aria-hidden="true"></i>
+    <i class="fa fa-sign-language" aria-hidden="true"></i>
+    <i class="fa fa-user" aria-hidden="true"></i>
+  </div>
+</app-footer>

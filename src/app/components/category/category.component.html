@@ -1,0 +1,15 @@
+<div class="category-layout">
+  <h1>Category</h1>
+  <div class="see-all">
+    <p>See All</p>
+    <i class="fa fa-angle-right" aria-hidden="true"></i>
+  </div>
+</div>
+<div class="icon-layout">
+  <div class="icon-body" *ngFor="let item of icons">
+    <div class="icon">
+      <p>{{ item.emoji }}</p>
+    </div>
+    <p class="">{{ item.type }}</p>
+  </div>
+</div>

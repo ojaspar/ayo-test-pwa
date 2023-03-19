@@ -1,0 +1,46 @@
+<app-header>
+  <div headerContent class="headerContent">
+    <i class="fa fa-angle-right" (click)="back()" aria-hidden="true"></i>
+    <p>Movie details</p>
+  </div>
+</app-header>
+<div *ngIf="singleMovie$ | async as singleMovie">
+  <div class="card-layout" [ngSwitch]="singleMovie">
+    <app-card [movie]="singleMovie"></app-card>
+
+    <!-- genre -->
+    <div class="info-layout">
+      <div class="info">
+        <i class="fa fa-camera" aria-hidden="true"></i>
+        <p class="genre">Genre</p>
+        <span>{{ singleMovie.Genre }}</span>
+      </div>
+      <div class="info">
+        <i class="fa fa-building" aria-hidden="true"></i>
+        <p class="genre">BoxOffice</p>
+        <span>{{ singleMovie.BoxOffice }}</span>
+      </div>
+      <div class="info">
+        <i class="fa fa-star" aria-hidden="true"></i>
+
+        <p class="genre">Rating</p>
+        <span>{{ singleMovie.imdbRating }}</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- title -->
+  <div class="title">
+    <h1>{{ singleMovie.Title }}</h1>
+    <div>
+      <h2>Synopsis</h2>
+      <p>{{ singleMovie.Plot }}</p>
+    </div>
+  </div>
+</div>
+
+<app-footer>
+  <div footerContent class="footerContent">
+    <button [disabled]="true">Book Reservation</button>
+  </div>
+</app-footer>
