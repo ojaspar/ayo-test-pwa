@@ -9,7 +9,7 @@ This is a web application built using the Angular framework as a PWA. The applic
 
 # Getting started
 
-- Clone the repository: git clone https://github.com/ojaspar/dot-test.git
+- Clone the repository: git clone https://github.com/ojaspar/ayo-test-pwa.git
 - Install the dependencies: npm install
 - Run the development server: ng serve
 - Open the application in a web browser: http://localhost:4200
