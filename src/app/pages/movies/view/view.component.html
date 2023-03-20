@@ -4,8 +4,8 @@
     <p>Movie details</p>
   </div>
 </app-header>
-<div *ngIf="singleMovie$ | async as singleMovie">
-  <div class="card-layout" [ngSwitch]="singleMovie">
+<div @container *ngIf="singleMovie$ | async as singleMovie">
+  <div @enterFromTop class="card-layout" [ngSwitch]="singleMovie">
     <app-card [movie]="singleMovie"></app-card>
 
     <!-- genre -->

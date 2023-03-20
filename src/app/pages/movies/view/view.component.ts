@@ -5,10 +5,12 @@ import { getSingleMovie } from 'src/app/store/movies/actions';
 import { singleMovieSelector } from 'src/app/store/movies/selectors';
 import { AppStateInterface } from 'src/app/store/types/appState.interface';
 import { Location } from '@angular/common';
+import { Container, EnterFromTop } from 'src/app/animations/animations';
 @Component({
   selector: 'app-view',
   templateUrl: './view.component.html',
   styleUrls: ['./view.component.scss'],
+  animations: [Container, EnterFromTop],
 })
 export class ViewComponent implements OnInit {
   singleMovie$ = this.appStore.pipe(select(singleMovieSelector));
